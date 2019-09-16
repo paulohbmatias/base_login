@@ -1,3 +1,4 @@
+import 'package:base_login/modules/login/login_provider.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -7,10 +8,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Container(),
+      theme: ThemeData.dark(),
+      home: LoginProvider(),
     );
   }
 }
